@@ -19,6 +19,14 @@ from countries.serializers import CountriesSerializer
 
 @api_view(['GET', 'POST'])
 def countries_list(request: HttpRequest):
+    """
+    API View to list all countries or to add new ones
+
+    :param request: GET or POST Requests
+    :type request: HttpRequest
+    :return: JSON RESPONE
+    :rtype: json
+    """
     if request.method == 'GET':
         countries = Countries.objects.all() # pylint: disable=maybe-no-member
 
@@ -41,6 +49,16 @@ def countries_list(request: HttpRequest):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def countries_detail(request:HttpRequest, pk):
+    """
+    API View to get or update or delete a country by a given primary key
+
+    :param request: GET, PUT or DELETE Request
+    :type request: HttpRequest
+    :param pk: Country Primary Key
+    :type pk: int
+    :return: JSON RESPONSE
+    :rtype: json
+    """
     try:
         countries:Countries = Countries.objects.get(pk=pk) # pylint: disable=maybe-no-member
     except:

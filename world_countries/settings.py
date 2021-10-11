@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# pip install djangorestframework
+# pip install django-cors-headers
+# Apps needed for Django API REST
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +45,9 @@ INSTALLED_APPS = [
     "corsheaders",
     "countries.apps.CountriesConfig",
 ]
+
+# Add cors middleware
+# 'corsheaders.middleware.CorsMiddleware'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -131,6 +138,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# required vars for allow connections
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITE_LIST = (
