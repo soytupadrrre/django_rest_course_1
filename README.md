@@ -1,4 +1,4 @@
-# django_rest_course_1
+# Django Rest Course
 First django REST proyect (GET, POST, PUT, DELETE)
 
 POSTGRE DB is needed
