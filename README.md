@@ -1,7 +1,7 @@
 # Django Rest Course
 First django REST proyect (GET, POST, PUT, DELETE)
 
-POSTGRE DB is needed
+POSTGRES DB is needed
 
 Is recommended to use docker
 
