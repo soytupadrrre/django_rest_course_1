@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'world_countries.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_rest',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
+        'NAME': '(change_this)',
+        'USER': '(change_this)',
+        'PASSWORD': '(change_this)',
+        'HOST': '(change_this)',
         'PORT': '5432',
     }
 }
